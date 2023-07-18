@@ -1,0 +1,467 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.wrapper{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+header{
+  background-image: url(./images/artiom-vallat-558027-unsplash-1519757244-94.181.200.62-1920x1280.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment:scroll;
+  /* background-size: auto; */
+}
+nav{
+  height: 50px;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  /* text-align: center; */
+  justify-content: right;
+  background-color: #F4F8FA;
+  /* color: #fff; */
+  padding: 15px;
+  text-transform: capitalize;
+  position: fixed;
+  top: 0;
+  right:15px;
+  z-index: 999;
+}
+nav ul{
+  padding: 0;
+  right: 0;
+  top: 0;
+}
+nav ul li{
+  float: left;
+  width: 125px;
+  line-height: 35px;
+  font-size: 12px;
+  /* display: inline; */
+  text-align: center;
+  /* margin-right: 10px; */
+}
+nav ul li ul{
+  display: none;
+  position: relative;
+}
+nav ul li:hover ul{
+  display: block;
+}
+nav ul li ul li{
+  display: block;
+  background:white;
+  width: 125px;
+  text-align: left;
+  padding-left: 5px;
+  transition: 0.05s ease-in-out all;
+}
+nav ul li ul li::after{
+  
+  content:"";
+  position: absolute;
+  padding-left: 7px;
+}
+nav ul li ul li:hover::after{
+  content:"➵";
+  font-size: 16px;
+}
+.btn-1{
+  width: 100px;
+  border: 1px;
+  border-radius: 4px;
+  font-size: 15px;
+  background-color: #1DC9CB;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 3px 12px;
+}
+.banner{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.text{
+  width: 50%;
+  height: 80vh;
+  text-align: center;
+  text-transform: capitalize;
+  padding-top: 13%;
+}
+.text h1{
+  color: #444444;
+  font-size: 44px;
+}
+.text p{
+  color: #fff;
+  font-size: 30px;
+  margin: 15px;
+}
+.text .button{
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  /* justify-content: space-between; */
+}
+.button .btn-2,
+.btn-3{
+  width: 50%;
+  margin: 12px;
+  padding: 15px;
+}
+.btn-2{
+  border-radius: 3px;
+  font-size: 15px;
+  background-color: #fff;
+
+}
+.btn-2:hover::after{
+  content:"➵";
+  font-size: 16px;
+  position: absolute;
+  padding: left 5px;
+  font-weight: 500;
+}
+.btn-2:hover{
+
+  background-color:#5e5a5a;
+  color: white;
+}
+.btn-3:hover{
+  background-color: #fff;
+}
+/* ----------------main------------ */
+/* --------------journal---------- */
+main{
+  width: 100%;
+  padding-top: 80px;
+}
+.journal{
+  padding: 0 15px;
+  color: #8d97ad;
+}
+.journal h2{
+  color: #232323;
+  font-size: 28.8px;
+  margin: 0 0 18px;
+
+}
+.journal p{
+  color: #8d97ad;
+  font-size: 16px;
+  margin: 0 0 24px;
+  width: 60%;
+}
+.contain{
+  /* display: flex; */
+  width: 100%;
+  border: 0.05px solid #8d97ad4f;
+  border-radius: 3px;
+  border-bottom:none ;
+}
+.contain .box-1{
+  height: 250px;
+  width:100%;
+  display: flex;
+}
+
+.contain .box{
+  width: 400px;
+  padding: 45px 32px;
+  color: #8d97ad;
+  height: 250px;
+  /* border:5px solid #8d97ad ; */
+}
+.contain .img{
+  width: 400px;
+  display: flex; 
+  /* overflow: hidden; */
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+}
+.box-1 .box p{
+  padding: 15px 0;
+  color: #8d97ad;
+}
+.box-1 .box a{
+  padding: 3px 0;
+  color: #1DC9CB;
+}
+.box-1 .box a::after{
+  content: ".\f061";
+  font-family: font awesome ;
+  position: absolute;
+  padding: 0 3px;
+  color:#1DC9CB;
+}
+.paragraph{
+  padding: 60px 50px;
+  width: 75%;
+  text-align: left;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #8d97ad;
+}
+/* ----------do you----- */
+.do-you{
+  background-image: url(./images/jack-catterall-6268-unsplash-1200x800.jpg);
+  background-size: cover;
+  /* background-position: center; */
+  background-attachment: scroll;
+  padding: 50px 0;
+}
+h1{
+  font-size:60px;
+  text-align: center;
+  font-weight: 300;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  
+}
+.email{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  padding-top: 35px ;
+  /* flex-direction: column */
+}
+.email input{
+  width: 50%;
+  font-size: 16px;
+  padding: 20px;
+  background-color: white;
+  border: none;
+  
+}
+button {
+  padding:20px;
+  font-size:16px;
+  border: none;
+  background-color: #1DC9CB;
+}
+/* ---------------countries---------- */
+.countries{
+  padding:30px 0
+}
+.countries .state{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+.countries .city{
+  width: 30%;
+  padding: 30px 30px;
+  border: 0px solid;
+  border-radius: 5px;
+  color: white;
+}
+.countries .city h1{
+  padding: 10px 0;
+  font-size: 20px;
+  text-align: left;
+  
+}
+.countries .city p{
+  padding: 20px 0;
+
+}
+.countries .city a{
+  color: white;
+
+
+}
+.countries .city a::after{
+  content: ".\f061";
+  font-family: font awesome ;
+  position: absolute;
+  padding: 0 3px;
+
+}
+.south{
+  background: linear-gradient(45deg, #2bdc9d, #1dc9cb);
+}
+.nordic{
+  background: linear-gradient(45deg, #188ef4, #306de8);
+}
+.african{
+      background: linear-gradient(45deg, #ff4f7b, #ff695c);
+
+}
+/* --------------geographic--------------- */
+.geographic{
+  width: 60%;
+  /* text-align: center; */
+  margin: 0 auto;
+  color: #8d97ad;
+}
+.geographic h3{
+  color: black;
+  padding: 20px 0;
+}
+.geographic p{
+  line-height: 1.6;
+  font-size: 20px;
+}
+.geographic i{
+  font-size: 40px
+};
+/* ------------------card-1----------- */
+.card-1{
+  /* display: flex; */
+  flex-direction: row;
+  margin: 0 5px;
+  justify-content: space-between;
+}
+.card-1 .card-101 {
+  padding:15px
+}
+.card-1 .card-101 h1{
+  font-size: 20px;
+  text-align: left;
+  padding: 25px 0;
+  color: #000;
+}
+.card-1 .card-101 p{
+  line-height: 1.6;
+  text-align: justify;
+  padding:15px 0
+}
+.card-1 .card-101 button{
+  width: 90%;
+  text-align: center;
+
+}
+.card-1 .card{
+  width:calc(33.33%);
+  padding:25px 15px;
+ 
+}
+.card .card-img img{
+  width: 100%;
+  border-radius: 5px;
+  /* padding-top: 15px; */
+}
+.card .card-text h2{
+  padding: 10px 0;
+}
+.card .card-text p{
+  padding: 10px 0;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.card .card-text a{
+  color: #188ef4;
+  font-size: 18px;
+}
+
+.card .card-text a:hover{
+  color:#000
+}
+/* ------------------blog----------- */
+.blog-tex{
+  text-align: center;
+  padding-top: 60px;
+}
+.blog-tex h3{
+  font-size: 30px;
+  padding: 15px;
+
+}
+.blog-tex p{
+  font-size: 20px;
+  padding: 15px;
+  color: #8d97ad;
+}
+
+.blog{
+  display:flex;
+  text-align: center;
+}
+.blog .card{
+  width: 33.33%;
+  padding:15px;
+  /* box-shadow: 0px 0px 50px 2px rgb(219, 219, 219) */
+}
+.blog .card-img img{
+  border-radius: 0;
+  width: 100%;
+  height: auto;
+}
+.blog .card-img{
+  overflow: hidden;
+  padding: 0;
+  margin: 0%;
+}
+  .blog .card-text{
+  padding:25px;
+  background-color:#ffffff;
+  /* box-shadow: 1px 1px  1px 1px rgb(219, 216, 216); */
+}
+.blog .card-text p{
+  
+  text-align: center;
+  color: #8d97ad;
+}
+/* ---------footer- */
+footer{
+  background-color: #F4F8FA;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+strong{
+  font-weight: bold;
+}
+ 
+.tem{
+  padding: 0 35px;
+  width: 25%;
+}
+.footer p{
+  padding: 30px 0;
+  color: #8d97ad;
+}
+.footer .phone,
+.email-id,
+.social,
+.tem{
+  padding: 0 40px;
+  width: 25%;
+/* text-align: center; */
+/* align-items: center; */
+}
+.footer .social ul{
+  justify-content: space-between;
+  padding:30px 0;
+  display: flex;
+}
+  .footer .social ul li{
+  font-size: 30px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  /* justify-content: center; */
+  text-align: center;
+  padding: 2px;
+  display: inline-block;
+  color: #1DC9CB;
+}
